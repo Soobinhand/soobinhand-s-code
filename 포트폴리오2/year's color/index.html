@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>swiper slider</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="swiper-container">
+            <h1>역대 올해의 컬러</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: #0f4c81;"><h2>2020년<br>#0f4c81<br>Classic Blue</h2></div>
+                <div class="swiper-slide" style="background: #ff6f61;"><h2>2019년<br>#ff6f61<br>Living Coral</h2></div>
+                <div class="swiper-slide" style="background: #5f4b8b;"><h2>2018년<br>#5f4b8b<br>Ultra Violet</h2></div>
+                <div class="swiper-slide" style="background: #88b04b;"><h2>2017년<br>#88b04b<br>Greenery</h2></div>
+                <div class="swiper-slide" style="background: #92a8d1;"><h2>2016년<br>#92a8d1<br>Serenity</h2></div>
+                <div class="swiper-slide" style="background: #955251;"><h2>2015년<br>#955251<br>Marsala</h2></div>
+                <div class="swiper-slide" style="background: #b163a3;"><h2>2014년<br>#b163a3<br>Radiant Orchid</h2></div>
+                <div class="swiper-slide" style="background: #009473;"><h2>2013년<br>#009473<br>Emerald</h2></div>
+                <div class="swiper-slide" style="background: #dd4124;"><h2>2012년<br>#dd4124<br>Tangerine Tango</h2></div>
+                <div class="swiper-slide" style="background: #d94f70;"><h2>2011년<br>#d94f70<br>Honeysuckle</h2></div>
+                <div class="swiper-slide" style="background: #45b5aa;"><h2>2010년<br>#45b5aa<br>Turquoise</h2></div>
+                <div class="swiper-slide" style="background: #f0c05a;"><h2>2009년<br>#f0c05a<br>Mimosa</h2></div>
+                <div class="swiper-slide" style="background: #5a5b9f;"><h2>2008년<br>#5a5b9f<br>Blue Iris</h2></div>
+                <div class="swiper-slide" style="background: #9b1b30;"><h2>2007년<br>#9b1b30<br>Chili Pepper</h2></div>
+                <div class="swiper-slide" style="background: #decdbe;"><h2>2006년<br>#decdbe<br>Sand Dollar</h2></div>
+                <div class="swiper-slide" style="background: #53bdae;"><h2>2005년<br>#53bdae<br>Blue Turquoise</h2></div>
+                <div class="swiper-slide" style="background: #e2583e;"><h2>2004년<br>#e2583e<br>Tigerlily</h2></div>
+                <div class="swiper-slide" style="background: #7bc4c4;"><h2>2003년<br>#7bc4c4<br>Aqua Sky</h2></div>
+                <div class="swiper-slide" style="background: #bf1932;"><h2>2002년<br>#bf1932<br>True Red</h2></div>
+
+
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    });
+          </script>
+    </body>
+</html>
